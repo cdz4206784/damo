@@ -12,10 +12,10 @@
 
 - 前端util.js公开方法调用说明:
 
-#```
-import { db, onAdd, onRemove, onQuery, onUpload } from '../../utils/util'
-const _ = db.command
-#```
+`
+- import { db, onAdd, onRemove, onQuery, onUpload } from '../../utils/util'
+- const _ = db.command
+`
 
 // 新增
 // onAdd({
