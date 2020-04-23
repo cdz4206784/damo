@@ -12,33 +12,37 @@
 
 - 前端util.js公开方法调用说明:
 
-`
-- import { db, onAdd, onRemove, onQuery, onUpload } from '../../utils/util'
-- const _ = db.command
-`
+```
+import { db, onAdd, onRemove, onQuery, onUpload } from '../../utils/util'
+const _ = db.command
+```
 
-// 新增
-// onAdd({
-//   loadStart: true,
-//   name: 'counters',
-//   data: {
-//     count: 100
-//   }
-// }).then(res=>{
-//   console.log(res,"addaddddddddd")
-// })
+- 新增
+```
+onAdd({
+  loadStart: true,
+  name: 'counters',
+  data: {
+   count: 100
+  }
+}).then(res=>{
+  console.log(res,"addaddddddddd")
+})
+```
 
-// 修改
-// onAdd({
-//   loadStart: true,
-//   name: 'counters',
-//   where: '6aebd2215e7c54a8000e828b32638ff0',
-//   data: {
-//     count: 99
-//   }
-// }).then(res=>{
-//   console.log(res,"addaddddddddd")
-// })
+- 修改
+```
+onAdd({
+  loadStart: true,
+   name: 'counters',
+   where: '6aebd2215e7c54a8000e828b32638ff0',
+   data: {
+    count: 99
+   }
+}).then(res=>{
+ console.log(res,"addaddddddddd")
+})
+```
 
 // 删除
 // onRemove({
