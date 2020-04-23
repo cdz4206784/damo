@@ -44,48 +44,55 @@ onAdd({
 })
 ```
 
-// 删除
-// onRemove({
-//   name: 'counters',
-//   where: '42c9a7b15e7c0f78000c03ab4da52dca',
-//   fileId: 'cloud://prod-caev4.7072-prod-caev4-1301650577/my-image.jpeg'
-// }).then(res=>{
-//   console.log(res,"ddddddd")
-// })
+- 删除
+```
+onRemove({
+  name: 'counters',
+  where: '42c9a7b15e7c0f78000c03ab4da52dca',
+  fileId: 'cloud://prod-caev4.7072-prod-caev4-1301650577/my-image.jpeg'
+}).then(res=>{
+  console.log(res,"ddddddd")
+})
+```
 
-// 查询所有
-// onQuery({
-//   loadStart: true,
-//   loadEnd: true,
-//   name: 'counters',
-//   pageNum: 1,
-//   showNum: 5,
-//   where: {
-//     count: _.gt(1)
-//   },
-//   orderField: 'count',
-//   orderValue: 'asc'
-// }).then(res=>{
-//   console.log(res, "qqqqq")
-// })
+- 查询所有
+```
+onQuery({
+  loadStart: true,
+  loadEnd: true,
+  name: 'counters',
+  pageNum: 1,
+  showNum: 5,
+  where: {
+   count: _.gt(1)
+  },
+  orderField: 'count',
+  orderValue: 'asc'
+}).then(res=>{
+  console.log(res, "qqqqq")
+})
+```
 
-// 查询单个
-// onQuery({
-//   loadStart: true,
-//   loadEnd: true,
-//   name: 'counters',
-//   where: 'dc65fe3e5e7c0f2b0009a58a75b577ea'
-// }).then(res=>{
-//   console.log(res, "qqqqq")
-// })
+- 查询单个
+```
+onQuery({
+  loadStart: true,
+  loadEnd: true,
+  name: 'counters',
+  where: 'dc65fe3e5e7c0f2b0009a58a75b577ea'
+}).then(res=>{
+  console.log(res, "qqqqq")
+})
+```
 
-// 上传图片
-//onUpload({
-//  loadStart: true,
-//  loadEnd: true,
-//}).then(res=>{
-//  console.log(res,"rerererererere")
-//})
+- 上传图片
+```
+onUpload({
+  loadStart: true,
+  loadEnd: true,
+}).then(res=>{
+  console.log(res,"rerererererere")
+})
+```
 
-## ===================================================
-// 调用云函数 增删改查
+##其他内容完善中...
