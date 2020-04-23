@@ -1,0 +1,84 @@
+/**index.wxss**/
+
+.fixed_nav {
+  position: fixed;
+  right: 30rpx;
+  bottom: 60rpx;
+  background: transparent;
+  z-index: 999
+}
+
+.fixed_box {
+  width: 60rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 30rpx;
+}
+
+.fixed_box:nth-child(2) {
+  margin-top: 10rpx;
+}
+
+.fixed_box image {
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.list-view {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  margin-bottom: 10rpx
+}
+
+.list-view .img {
+  display: block;
+  width: 100%;
+  border-radius: 20rpx;
+  margin-bottom: 5rpx;
+  background: url('cloud://prod-caev4.7072-prod-caev4-1301650577/loading_icon.png') center no-repeat #f6f6f6;
+  /* background-size: 100rpx 100rpx; */
+}
+
+.list-view .title {
+  color: #333;
+  font-size: 24rpx;
+  padding: 10rpx 0;
+}
+
+.list-view .desc {
+  color: #888;
+  font-size: 20rpx;
+  line-height: 32rpx;
+}
+
+.load-txt {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10rpx;
+  color: #999;
+  font-size: 20rpx;
+  line-height: 32rpx;
+}
+
+.noData {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.noData image {
+  display: block;
+  width: 128rpx;
+  height: 128rpx;
+}

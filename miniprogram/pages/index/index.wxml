@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="fixed_nav">
+  <view class="fixed_box" bindtap="backTop">
+    <image src="cloud://prod-caev4.7072-prod-caev4-1301650577/top_icon.png"></image>
+  </view>
+  <view class="fixed_box" bindtap="publishFn" wx:if="{{adminFlag}}">
+    <image src="cloud://prod-caev4.7072-prod-caev4-1301650577/publish_icon.png"></image>
+  </view>
+</view>
+
+<view class="list-view" wx:for="{{photoDatas}}" wx:key="index">
+  <image class="img" style="background:url('../../images/loading_icon.png') center no-repeat #f6f6f6; background-size:80rpx 80rpx" src="{{item.p_imgs[0]}}" mode="aspectFit" lazy-load="true"></image>
+  <text class="title">##{{item.p_title}}##</text>
+  <text class="desc" wx:if="{{item.p_desc}}">{{item.p_desc}}</text>
+</view>
+
+<view class="noData" wx:if="{{noData}}">
+  <image src="cloud://prod-caev4.7072-prod-caev4-1301650577/no_pic.png"></image>
+</view>
+
+<text class="load-txt">{{loadTxt}}</text>
