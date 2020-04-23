@@ -10,10 +10,12 @@
 
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
 
-前端util.js公开方法调用说明:
+- 前端util.js公开方法调用说明:
 
+#```
 import { db, onAdd, onRemove, onQuery, onUpload } from '../../utils/util'
 const _ = db.command
+#```
 
 // 新增
 // onAdd({
