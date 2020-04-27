@@ -1,32 +1,23 @@
 //index.js
 const app = getApp()
-import { showLoading, hideLoading, isAdmin } from '../../utils/util'
+import { showLoading, hideLoading } from '../../utils/util'
 
 Page({
   data: {
     avatarUrl: './user-unlogin.png',
     userInfo: {},
     logged: false,
-    adminFlag: false, //是否管理员
 
     pageNum: 1,
-    showNum: 5,
+    showNum: 10,
     photoDatas: [],
     noData: false,
     loadTxt: ''
   },
 
-  // 置顶
-  backTop: function(){
-    wx.pageScrollTo({
-      scrollTop: 0
-    })
-  },
-
-  // 发布
-  publishFn:function(){
+  jumpVideo: function(){
     wx.navigateTo({
-      url: '../publish/publish',
+      url: '../video/video',
     })
   },
 
@@ -68,34 +59,6 @@ Page({
     })
   },
 
-  // 判断openid,是否为管理员
-  adminFn: function(){
-    let that = this
-    if (!app.globalData.openid) {
-      wx.cloud.callFunction({
-        name: 'login',
-        data: {},
-        success: res => {
-          app.globalData.openid = res.result.openid
-          if (isAdmin() != -1) {
-            that.setData({
-              adminFlag: true
-            })
-          }
-        },
-        fail: err => {
-          console.error('[云函数] [login] 调用失败', err)
-        }
-      })
-    } else {
-      if (isAdmin() != -1) {
-        that.setData({
-          adminFlag: true
-        })
-      }
-    }
-  },
-
   /**
    * 生命周期函数--监听页面加载
    */
@@ -134,9 +97,6 @@ Page({
     }).catch(err => {
       console.error(err)
     })
-
-    // 验证是否管理员
-    this.adminFn()
   },
 
   /**

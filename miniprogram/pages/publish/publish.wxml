@@ -12,11 +12,11 @@
   <view class="form_pic">
     <view class="up_pic" wx:for="{{p_imgs}}" wx:key="index">
       <image src="{{item}}" class="img" bindtap="prevImg" data-current="{{index}}" mode="aspectFit"></image>
-      <image src="cloud://prod-caev4.7072-prod-caev4-1301650577/close_icon.png" class="close" bindtap="delImg" data-current="{{index}}"></image>
+      <icon class="iconfont icon-ic_searchclosed close" bindtap="delImg" data-current="{{index}}"></icon>
     </view>
     
     <view class="up_pic" bindtap="uploadImg" wx:if="{{p_imgs.length < 3}}">
-      <image src="cloud://prod-caev4.7072-prod-caev4-1301650577/upload_icon.png" class="icon"></image>
+      <icon class="iconfont icon-shangchuan up"></icon>
       <text>选择图片</text>
     </view>
   </view>
@@ -24,5 +24,4 @@
   <view class="form_btn">
     <text bindtap="bindSubmit">发布</text>
   </view>
-
 </view>

@@ -17,9 +17,13 @@ App({
       this.onGetOpenid()
     }
 
-    this.globalData = {
-      adminOpenID: ['o9wmM5RdNzx0sjA4YEHOIgYpDSYI', 'o9wmM5RJjqb5Th1oKoz_rcxYOnI4']
-    }
+    this.globalData.adminOpenID = ['o9wmM5RdNzx0sjA4YEHOIgYpDSYI', 'o9wmM5RJjqb5Th1oKoz_rcxYOnI4']
+  },
+
+  globalData: {
+    adminOpenID: [],  //超级管理
+    systeminfo: false,   //系统信息
+    headerBtnPosi: false  //头部菜单高度
   },
 
   onGetOpenid: function(){

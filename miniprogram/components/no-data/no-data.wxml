@@ -1,0 +1,4 @@
+<!--components/no-data/no-data.wxml-->
+<view class="noData" wx:if="{{haveData}}">
+  <icon class="iconfont icon-zanwu"></icon>
+</view>

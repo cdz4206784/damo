@@ -1,0 +1,13 @@
+/* components/no-data/no-data.wxss */
+.noData {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.noData icon {
+  font-size: 50px;
+  color: #ddd
+}

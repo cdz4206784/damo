@@ -1,0 +1,36 @@
+<!--pages/video/video.wxml-->
+<CustomHeader v-title="视频中心"></CustomHeader>
+
+<view class="list_wrap">
+  <swiper 
+  indicator-dots="{{indicatorDots}}" 
+  autoplay="{{autoplay}}" 
+  interval="{{interval}}" 
+  duration="{{duration}}"
+  current="{{swiperCurrent}}"
+  vertical="{{vertical}}"
+  previous-margin="{{previousMargin}}"
+  next-margin="{{nextMargin}}"
+  bindchange="swiperChange"
+  >
+
+    <block wx:for="{{swiperData}}" wx:key="index">
+      <swiper-item class="list_box">
+        
+        <!-- <video id="myVideo{{index}}" 
+          src="{{item.v_source}}" poster="{{item.v_poster}}" 
+          object-fit="contain" 
+          play-btn-position="center"
+          loop="{{true}}"
+          title="{{item.title}}"
+          show-fullscreen-btn="{{false}}"
+          show-play-btn="{{false}}"
+          enable-play-gesture="{{true}}"
+          binderror="errorFn"
+          ></video> -->
+
+      </swiper-item>
+    </block>
+
+  </swiper>
+</view>

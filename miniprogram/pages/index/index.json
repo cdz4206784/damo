@@ -1,5 +1,8 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "RightTools": "/components/right-tools/right-tools",
+    "NoData": "/components/no-data/no-data"
+  },
   "navigationBarTitleText": "大沫印象",
   "enablePullDownRefresh": true
 }

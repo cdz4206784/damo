@@ -1,0 +1,18 @@
+<!--components/custom-header/custom-header.wxml-->
+<view class="custom_header" style="height:{{navbarHeight}}px;">
+  <!-- 左侧胶囊 -->
+  <view class="custom_posi {{!haveBack && 'custom_posi_bg'}}" style="width: {{btnPosi.width}}px; height: {{btnPosi.height}}px; top: {{btnPosi.top}}px; left:{{btnPosi.left}}px; border-radius: {{btnPosi.height}}px">
+    <view wx:if="{{!haveBack}}" class="v-icon" bindtap="_goBack">
+      <icon class="iconfont icon-arrow-left"></icon>
+    </view>
+    <view wx:if="{{!haveBack}}" class="v-line"></view>
+    <view class="v-icon" bindtap="_goHome">
+      <icon class="iconfont icon-shouye"></icon>
+    </view>
+  </view>
+
+  <!-- 标题 -->
+  <view wx:if="{{vTitle}}" class="custom_title" style="width: {{titPosi.width}}px; height: {{titPosi.height}}px; top: {{titPosi.top}}px; left:{{titPosi.left}}px; line-height: {{titPosi.height}}px">
+  {{vTitle}}
+  </view>
+</view>

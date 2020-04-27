@@ -1,0 +1,9 @@
+<!--components/right-tools/right-tools.wxml-->
+<view class="fixed_nav">
+  <view class="fixed_box" bindtap="backTop">
+    <icon class="iconfont icon-huojian"></icon>
+  </view>
+  <view class="fixed_box" bindtap="publishFn" wx:if="{{adminFlag}}">
+    <icon class="iconfont icon-fabu"></icon>
+  </view>
+</view>

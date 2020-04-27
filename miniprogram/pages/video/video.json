@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "CustomHeader": "/components/custom-header/custom-header"
+  },
+  "disableScroll": true,
+  "navigationStyle": "custom",
+  "navigationBarTextStyle": "white"
+}

@@ -204,8 +204,8 @@ export const onUpload = (param) => {
         // 随机数
         const timerandom = new Date().getTime() + '_' + parseInt(Math.random() * 1000)
         // 云文件名称（待上传）
-        const cloudPath = 'DM_' + timerandom + filePath.match(/\.[^.]+?$/)[0]
-
+        const cloudPath = folderFn() + '/DM_' + timerandom + filePath.match(/\.[^.]+?$/)[0]
+    
         //上传文件到服务器
         wx.cloud.uploadFile({
           cloudPath,
@@ -299,4 +299,13 @@ const isEmptyObject = e => {
   let t;
   for (t in e) return !1;
   return !0;
+}
+
+// 以年月生成文件夹名称
+const folderFn = () =>{
+  let year = new Date().getFullYear()
+  let month = new Date().getMonth()
+  if (month < 10) month = `0${month}`
+  let folderName = year + month
+  return folderName
 }

@@ -1,7 +1,12 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/publish/publish"
+    "pages/publish/publish",
+    "pages/video/video",
+    
+    "components/custom-header/custom-header",
+    "components/right-tools/right-tools",
+    "components/no-data/no-data"
   ],
   "window": {
     "backgroundColor": "#FFF",

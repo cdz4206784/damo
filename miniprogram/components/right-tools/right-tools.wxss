@@ -1,0 +1,30 @@
+/* components/right-tools/right-tools.wxss */
+.fixed_nav {
+  position: fixed;
+  right: 30rpx;
+  bottom: 60rpx;
+  background: transparent;
+  z-index: 999
+}
+
+.fixed_box {
+  width: 60rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 30rpx;
+}
+
+.fixed_box:nth-child(1) icon {
+  font-size: 20px
+}
+
+.fixed_box:nth-child(2) {
+  margin-top: 10rpx;
+}
+
+.fixed_box icon {
+  color: #fff;
+}

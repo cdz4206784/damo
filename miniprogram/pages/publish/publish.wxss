@@ -59,25 +59,18 @@
   position: absolute;
   top: 8rpx;
   right: 8rpx;
-  display: block;
-  width: 36rpx;
-  height: 36rpx;
+  color: #1ab16c
 }
 
-
-.form_pic .up_pic .icon {
-  display: block;
-  width: 60rpx;
-  height: 60rpx;
+.form_pic .up_pic .up {
+  font-size: 22px;
+  color: #888;
 }
 .form_pic .up_pic text {
   margin-top: 10rpx;
   font-size: 20rpx;
   color: #888;
 }
-
-
-
 
 .form_btn {
   text-align: center;
