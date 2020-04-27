@@ -46,8 +46,6 @@
   width: 100%;
   border-radius: 20rpx;
   margin-bottom: 5rpx;
-  background: url('cloud://prod-caev4.7072-prod-caev4-1301650577/loading_icon.png') center no-repeat #f6f6f6;
-  /* background-size: 100rpx 100rpx; */
 }
 
 .list-view .title {

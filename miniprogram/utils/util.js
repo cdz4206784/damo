@@ -219,7 +219,7 @@ export const onUpload = (param) => {
         }).catch(err => {
           showTip('上传失败！')
           console.error('[上传文件] 失败：', err)
-        });
+        })
       }
     })
   })
@@ -304,7 +304,7 @@ const isEmptyObject = e => {
 // 以年月生成文件夹名称
 const folderFn = () =>{
   let year = new Date().getFullYear()
-  let month = new Date().getMonth()
+  let month = new Date().getMonth() + 1
   if (month < 10) month = `0${month}`
   let folderName = year + month
   return folderName
